@@ -703,7 +703,9 @@ MonoBehaviour:
   horizontalInput: 0
   playerSpeed: 20
   xRangePlayer: 10
-  projectilePrefab: {fileID: 4938626312953594927, guid: 44b665bf329713d4f9c4a573f4f46ae5, type: 3}
+  projectilePrefab:
+  - {fileID: 3056226316092947288, guid: d9d8260913881e841a582737d6069a90, type: 3}
+  - {fileID: 4938626312953594927, guid: 44b665bf329713d4f9c4a573f4f46ae5, type: 3}
 --- !u!850595691 &1847353876
 LightingSettings:
   m_ObjectHideFlags: 0
