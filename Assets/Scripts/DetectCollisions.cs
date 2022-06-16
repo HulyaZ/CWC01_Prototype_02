@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    [SerializeField] GameObject happyParticles;
+    [SerializeField] int hitPoints;
+    
+    ScoreBoard scoreBoard;
+
     void Start()
     {
-        
+        scoreBoard = FindObjectOfType<ScoreBoard>();
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Food")
+        {
+            GameObject vFX = Instantiate(happyParticles, transform.position + new Vector3(0,5,0), Quaternion.identity);
+  
+
+            scoreBoard.IncreaseScore(hitPoints); 
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
-    }
+
 }

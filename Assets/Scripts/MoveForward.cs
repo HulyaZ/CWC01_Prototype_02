@@ -6,6 +6,8 @@ public class MoveForward : MonoBehaviour
 {
     public float moveSpeed = 5.0f;
 
+   
+
     public float xRange = 10;
     void Start()
     {

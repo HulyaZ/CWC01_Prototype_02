@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: -5368868163981333266}
   m_Layer: 0
   m_Name: Animal_Moose_01
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  xRange: 10
 --- !u!114 &1574705188697111067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +264,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6364242911190354696}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.22365236, y: 0.49537408, z: 0.46551454}
@@ -280,6 +281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b91b8a8ea66b2546b938f273b4ca349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  happyParticles: {fileID: 1445009714463364712, guid: 65fd313f11e37a241b2f58becf2028b9, type: 3}
+  hitPoints: 3
 --- !u!1 &6364242911190355982
 GameObject:
   m_ObjectHideFlags: 0

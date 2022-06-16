@@ -6,9 +6,14 @@ public class DestroyOutOfBounds : MonoBehaviour
 {
     float topBound = 30;
     float lowerBound = -15;
+
+
+    ScoreBoard scoreBoard;
+
     void Start()
     {
-        
+
+        scoreBoard = FindObjectOfType<ScoreBoard>();
     }
 
     // Update is called once per frame
@@ -20,6 +25,8 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < lowerBound)
         {
+
+            scoreBoard.DecreaseScore(1);
             Destroy(gameObject);
         }
     }

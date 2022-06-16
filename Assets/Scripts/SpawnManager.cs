@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     float spawnRangeX = 20;
     float spawnPosZ = 30;
 
-    float startDelay = 2;
+    float startDelay = 1;
     
 
     void Start()
